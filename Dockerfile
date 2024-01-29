@@ -10,7 +10,7 @@ EXPOSE 9003
 
 #
 # Build docker image:
-# docker build -t springboot-microservices/payment-service:0.0.1 .
+# docker build -t princeabhijeet/payment-service:latest .
 # -t : tag info will be provided in command
 # last . : find Dockerfile in current root folder to build docker image 
 
@@ -20,8 +20,8 @@ EXPOSE 9003
 
 #
 # Run docker image:
-# docker run -d -p9003:9003 --name payment-service springboot-microservices/payment-service:0.0.1
-# docker run -d -p9003:9003 --net msnet --name payment-service springboot-microservices/payment-service:0.0.1
+# docker run -d -p9003:9003 --name payment-service princeabhijeet/payment-service:latest
+# docker run -d -p9003:9003 --net msnet --name payment-service princeabhijeet/payment-service:latest
 # -d : detatched mode
 # -p : port information
 # 8761:8761 : hostport:containerport
